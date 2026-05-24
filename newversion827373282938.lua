@@ -7,7 +7,7 @@ pcall(function()
 end)
 
 -- If the key is NOT present, kick the player
-if not string.find(scriptContent, "script_key;%%KEY%%;") then
+if not string.find(scriptContent, "script_key;%KEY%;") then
     local player = game.Players.LocalPlayer
     if player then
         player:Kick("Unauthorized script execution")
